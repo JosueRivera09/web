@@ -1,0 +1,205 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+header {
+    background: #ffffffc3;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 30px;
+}
+header nav li a:hover{
+    background-color: rgba(85, 96, 224, 0.05);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.home {
+    background: url('assets/banner.png') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+.video {
+    margin: 10px;
+    padding: 0;
+    display: flex;
+   justify-content: space-around;
+}
+
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.social-media {
+    padding: 20px;
+    text-align: center;
+}
+
+.services, .about, .contact {
+    padding: 20px;
+    text-align: center;
+}
+
+.services h2, .about h2, .contact h2 {
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.car-up{
+    height: 300px;
+    width: 400px;
+    min-height: 150px;
+    min-width: 200px;
+}
+
+.service-card {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a:hover(){
+    color: red;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .logo h1 {
+        font-size: 24px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    
+    .video video{
+        min-width: 300px;
+        min-height: 400px;
+       
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .service-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .home {
+        padding: 40px 10px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
